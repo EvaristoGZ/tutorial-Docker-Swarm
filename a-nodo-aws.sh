@@ -4,8 +4,8 @@ clear
 # Crea un nodo en Amazon Web Service con la clave de acceso y la clave secreta
 # establecida en las variables. Muestra información a través de inspect.
 
-ACCESS_KEY=AKIAJD57233YLAWOJTJQ
-SECRET_KEY=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
+ACCESS_KEY=TU_CLAVE_DE_ACCESO_AWS
+SECRET_KEY=TU_CLAVE_SECRETA_AWS
 NODO=pruebaAWS
 
 echo "\n# Los valores de ACCESS_KEY, SECRET_KEY y NOMBRE_NODO son los siguientes:"
