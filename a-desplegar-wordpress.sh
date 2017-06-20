@@ -4,6 +4,12 @@ clear
 # Despliega dos servicios: uno con MariaDB y otro con WordPress. No sigue la
 # arquitectura de microservicios. El servicio MariaDB ejecuta la versión 10.3.0
 # El servicio de WordPress se ejecuta con WordPress 4.8.0, PHP 7.0 y Apache 2.4.
+# ¡ Ejecutar antes 01-crear-cluster.sh !
+
+echo "\n# Asegúrate de haber ejecutado 01-crear-cluster.sh antes"
+
+echo "\n# Conectando al manager-02"
+eval $(docker-machine env manager-01)
 
 echo "\n# Generamos aleatoriamente la password de root de la BBDD"
 echo "# y la almacenamos en un secreto llamado root_db_pass"
@@ -37,7 +43,7 @@ docker service create \
 --replicas 1 \
 --constraint=node.role==manager \
 --network wp \
---mount type=volume,source=dbcontent,destination=/var/lib/mysql 
+--mount type=volume,source=dbcontent,destination=/var/lib/mysql \
 --secret source=root_db_pass,target=root_db_pass \
 --secret source=wp_db_pass,target=wp_db_pass \
 -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/root_db_pass \
