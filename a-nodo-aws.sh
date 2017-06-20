@@ -14,8 +14,8 @@ echo "# SECRET_KEY=$SECRET_KEY"
 echo "# NOMBRE_NODO=$NOMBRE_NODO"
 
 echo "\n# Creando nodo en Amazon Web Service"
-echo "# Se ejecuta «docker-machine create -d amazonec2 --amazonec2-access-key $ACCESS_KEY --amazonec2-secret-key SECRET_KEY $NODO»"
-docker-machine create -d amazonec2 --amazonec2-access-key $ACCESS_KEY --amazonec2-secret-key SECRET_KEY $NODO
+echo "# Se ejecuta «docker-machine create -d amazonec2 --amazonec2-access-key $ACCESS_KEY --amazonec2-secret-key $SECRET_KEY $NODO»"
+docker-machine create -d amazonec2 --amazonec2-access-key $ACCESS_KEY --amazonec2-secret-key $SECRET_KEY $NODO
 
 echo "\n# Listamos los nodos de Docker Machine"
 echo "# Se ejecuta «docker-machine ls»"
@@ -24,7 +24,7 @@ docker-machine ls
 echo "# Información del nodo de Docker Machine $NODO, alojado en AWS 3 #"
 echo "# Se ejecuta \$(docker-machine inspect -f {{.Driver.VALOR}} $NODO)"
 echo "\n# Nombre máquina:\t $(docker-machine inspect -f {{.Driver.MachineName}} $NODO)"
-echo "# ID instancia:\t\t $(docker-machine inspect -f {{.Driver.InstanceID}} $NODO)"
+echo "# ID instancia:\t\t $(docker-machine inspect -f {{.Driver.InstanceId}} $NODO)"
 echo "# Región:\t\t $(docker-machine inspect -f {{.Driver.Region}} $NODO)"
 echo "# Tipo instancia:\t $(docker-machine inspect -f {{.Driver.InstanceType}} $NODO)"
 echo "# Precio de puja:\t $(docker-machine inspect -f {{.Driver.SpotPrice}} $NODO)"
