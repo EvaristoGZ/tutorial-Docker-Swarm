@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 clear
 
 # Comprueba que el Manager no ha ejecutado ninguna tarea más tras escalar el
