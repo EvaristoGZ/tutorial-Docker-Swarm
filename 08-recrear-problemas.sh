@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 clear
 
 # Escala el servicio encuesta_vote a 30 réplicas. Accede al nodo-02 y elimina
