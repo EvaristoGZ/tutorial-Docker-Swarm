@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 clear
 
 # Crea un nodo en Amazon Web Service con la clave de acceso y la clave secreta
