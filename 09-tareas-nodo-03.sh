@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 clear
 
 # Accede al manager-01 y lista las tareas encuesta_vote que se ejecutan en todos
