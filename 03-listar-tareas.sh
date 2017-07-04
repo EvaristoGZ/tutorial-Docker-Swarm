@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 clear
 
 # Muestra las tareas que sirven la página web a través del puerto 5000 y
