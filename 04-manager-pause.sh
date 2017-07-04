@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 clear
 
 # Cambia la disponibilidad (availability) del Manager de Active a Pause.
