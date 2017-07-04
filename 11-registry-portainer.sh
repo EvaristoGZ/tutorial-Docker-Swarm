@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 clear
 
 # Cambia el Availability de manager-01 a Active. Despliega un servicio de
