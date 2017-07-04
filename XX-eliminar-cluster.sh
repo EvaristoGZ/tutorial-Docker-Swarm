@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 clear
 
 # Muestra ejemplos de cómo se eliminan distintos elementos. Borra todos los
