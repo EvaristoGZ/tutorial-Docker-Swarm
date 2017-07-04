@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 clear
 
 # Actualiza el stack para quitar las constraints que obligan a ciertos
