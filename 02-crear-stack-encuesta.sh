@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 clear
 
 # Crea un stack llamado encuesta. Una aplicación ejecutada en microservicios
