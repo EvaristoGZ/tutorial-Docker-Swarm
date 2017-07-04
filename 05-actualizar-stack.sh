@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 clear
 
 # Actualiza el stack y escala el servicio vote de 2 a 15 réplicas a través de un
