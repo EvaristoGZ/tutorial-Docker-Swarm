@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 clear
 
 # Promueve el nodo-02 a manager. Degrada el manager-01 a worker.
