@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 clear
 
 # Hace un rollback del servicio encuesta_vote, en este caso volviendo a
