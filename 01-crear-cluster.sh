@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 reset
 
 # Crea tres nodos en VirtualBox y crea un clúster de Docker Swarm con un manager
